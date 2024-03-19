@@ -1,40 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reio Opromei</title>
 
-    <link rel="stylesheet" href="static/style/reset.css">
-    <link rel="stylesheet" href="static/style/style.css">
+    <link rel="stylesheet" href="../static/style/reset.css">
+    <link rel="stylesheet" href="../static/style/style.css">
 
     <script src="https://kit.fontawesome.com/9dbc654577.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="app">
-        <div class="dark-theme-toggle">
-            <label for="dark-theme-input">Enable dark theme</label>
-            <input type="checkbox" name="dark-theme" id="dark-theme-input">
-        </div>
+        <label for="dark-theme-input">Kasuta tumedat režiimi</label>
+        <input type="checkbox" name="dark-theme" id="dark-theme-input">
         <nav>
             <ul>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Get in touch</a></li>
-                <li><a href="/et/">Eesti keeles</a></li>
+                <li><a href="#minust">Minust</a></li>
+                <li><a href="#oskused">Oskused</a></li>
+                <li><a href="#kontakt">Võta ühendust</a></li>
+                <li><a href="../">In English</a></li>
             </ul>
         </nav>
         <header>
             <h1>Reio Opromei</h1>
         </header>
         <main>
-            <section id="about-me">
-                <h2>About me</h2>
-                <p>Estonian university student. TalTech - Development of IT Systems. Into tech, sounds and nature.</p>
+            <section id="minust">
+                <h2>Minust</h2>
+                <p>Tudeng Eestist. TalTech - IT-süsteemide arendus. Tehnika-, heli- ja loodusesõber.</p>
             </section>
-            <section id="skills">
-                <h2>Skills</h2>
-                <h3>Programming languages/frameworks</h3>
+            <section id="oskused">
+                <h2>Oskused</h2>
+                <h3>Programmeerimiskeeled ja raamistikud</h3>
                 <ul>
                     <li>Java</li>
                     <li>C#</li>
@@ -47,7 +45,7 @@
                     <li>PHP</li>
                     <li>Python</li>
                 </ul>
-                <h3>Tools</h3>
+                <h3>Tööriistad</h3>
                 <ul>
                     <li>VirtualBox</li>
                     <li>Docker</li>
@@ -57,9 +55,9 @@
                 </ul>
             </section>
         </main>
-        <footer id="contact">
+        <footer id="kontakt">
             <p>Reio Opromei &copy;2024-</p>
-            <p>reio [at] opromei [dot] ee</p>
+            <p>reio [ät] opromei [punkt] ee</p>
             <p style="font-size: 2em">
                 <a href="https://m.me/reio.opromei"><i class='social fab fa-facebook-messenger' style="color: #0091ff"></i></a>
                 <a href="https://www.instagram.com/ropromei/"><i class='social fab fa-instagram' style="color: #d3386b"></i></a>
@@ -74,6 +72,6 @@
 
     <a rel="me" href="https://mastodon.social/@ropromei" style="display: none;">Mastodon</a>
 
-    <script type="module" src="static/js/app.js"></script>
+    <script type="module" src="../static/js/app.js"></script>
 </body>
 </html>
