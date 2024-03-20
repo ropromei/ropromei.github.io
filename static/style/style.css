@@ -27,6 +27,7 @@ body.dark a:focus {
 
 nav {
     font-size: 120%;
+    padding-bottom: 2em;
 }
 
 nav ul {
@@ -53,8 +54,17 @@ nav ul li#link-to-footer a:focus {
     text-indent: 0px;
 }
 
+section {
+    padding-bottom: 1em;
+}
+
+section:last-child {
+    padding-bottom: 0;
+}
+
 footer {
     text-align: center;
+    padding-top: 2em;
 }
 
 h1 {
