@@ -67,6 +67,21 @@ footer {
     padding-top: 2em;
 }
 
+.flag {
+    display: inline-block;
+    width: 0.75em;
+    height: 0.75em;
+    background-size: contain;
+}
+
+.flag.flag-et {
+    background-image: url("/static/img/et.png");
+}
+
+.flag.flag-en {
+    background-image: url("/static/img/en.png");
+}
+
 h1 {
     font-size: 200%;
 }
