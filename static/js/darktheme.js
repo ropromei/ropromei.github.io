@@ -3,12 +3,19 @@ const darkThemeLocalStorageField = "darkTheme";
 const darkThemeInputId = "#dark-theme-input";
 
 const handleDarkThemeValueChange = (e) => {
+    let localStorageIsDarkTheme = localStorage.getItem(darkThemeLocalStorageField);
+
+    if (localStorageIsDarkTheme === null || typeof localStorageIsDarkTheme === "undefined") {
+        updateLocalStorage(true)
+    }
+
     if (typeof e !== "undefined" && e) {
         const checkedValue = e.target.checked;
         updateLocalStorage(checkedValue);        
     }
 
-    const localStorageIsDarkTheme = localStorage.getItem(darkThemeLocalStorageField)
+    localStorageIsDarkTheme = localStorage.getItem(darkThemeLocalStorageField);
+
     if (localStorageIsDarkTheme) {
         updateTheme(localStorageIsDarkTheme === "true")
         updateToggleValue(localStorageIsDarkTheme === "true");
