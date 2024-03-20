@@ -33,6 +33,26 @@ nav ul {
     list-style: none;
 }
 
+nav ul li#link-to-content,
+nav ul li#link-to-footer {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+}
+
+nav ul li#link-to-content a,
+nav ul li#link-to-footer a {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    text-indent: -9999px;
+}
+
+nav ul li#link-to-content a:focus,
+nav ul li#link-to-footer a:focus {
+    text-indent: 0px;
+}
+
 footer {
     text-align: center;
 }
@@ -79,5 +99,14 @@ a, a:visited, a:hover, a:focus {
 
     nav ul li a:hover {
         padding: 0.75em;
+    }
+
+    footer a:has(i) {
+        padding: 0.1em;
+        transition: 200ms padding;
+    }
+
+    footer a:has(i):hover {
+        padding: 0.3em;
     }
 }
